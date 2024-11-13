@@ -1,39 +1,87 @@
-/* Centered Header Styling */
-header {
+/* Projects Section Styling */
+#projects {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#projects h2 {
+    color: #ff9a9e;
+}
+
+.project-grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    color: #ff9a9e;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-card .btn {
+    background-color: #ff9a9e;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.project-card .btn:hover {
+    background-color: #ffd700;
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 1rem;
     text-align: center;
 }
 
-/* Center navigation links */
-nav {
-    margin-top: 1rem;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
+#contact h2 {
     color: #ffd700;
 }
 
-nav a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ffd700;
-    transition: width 0.3s;
+.contact-info {
+    margin-top: 1.5rem;
 }
 
-nav a:hover::after {
-    width: 100%;
+.contact-info .btn {
+    background-color: #ffd700;
+    color: #333;
+    margin: 0.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info .btn:hover {
+    background-color: #ff9a9e;
+    color: #fff;
 }
