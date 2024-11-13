@@ -1,87 +1,187 @@
-/* Projects Section Styling */
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #010e1d; /* Deep blue for an underwater effect */
+    color: #d4e1e8; /* Soft seafoam color */
+    font-size: 16px;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 50, 100, 0.7));
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    text-align: center;
+    color: #0dffd4; /* Glowing cyan */
+    text-shadow: 0 0 15px rgba(13, 255, 212, 0.8), 0 0 30px rgba(13, 255, 212, 0.5);
+    animation: heroGlow 3s ease-in-out infinite alternate;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    color: #a0d6d9;
+    margin-top: 1rem;
+    animation: heroGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes heroGlow {
+    0% {
+        text-shadow: 0 0 15px rgba(13, 255, 212, 0.8), 0 0 30px rgba(13, 255, 212, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 25px rgba(13, 255, 212, 1), 0 0 60px rgba(13, 255, 212, 1);
+    }
+}
+
+/* Button */
+.btn {
+    padding: 12px 25px;
+    background-color: #0dffd4;
+    color: #010e1d;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #4fd9d9;
+    transform: scale(1.1);
+}
+
+/* Projects Section */
 #projects {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #010e1d;
+    color: #fff;
+    padding: 4rem 2rem;
 }
 
 #projects h2 {
-    color: #ffd700; /* Gold color for headings */
+    text-align: center;
+    color: #00d8d6;
+    font-size: 3em;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 15px rgba(0, 216, 214, 0.7);
 }
 
+/* Project Cards */
 .project-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    margin-top: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .project-card {
-    background-color: #222; /* Dark gray card background */
-    border: 1px solid #444; /* Border to separate from background */
-    padding: 20px;
-    border-radius: 8px;
-    width: 280px;
+    background-color: #032d3b;
+    border: 1px solid #005b6e;
+    padding: 25px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 160, 190, 0.6);
     text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.6);
 }
 
 .project-card h3 {
-    font-size: 1.4rem;
-    color: #ff9a9e; /* Pink for project title */
-    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: #0dffd4;
+    margin-bottom: 1rem;
 }
 
 .project-card p {
-    font-size: 1rem;
-    color: #ddd; /* Light gray for paragraph text */
+    font-size: 1.1rem;
+    color: #d4e1e8;
     margin-bottom: 1rem;
 }
 
 .project-card .btn {
-    background-color: #ff9a9e; /* Pink button */
-    color: #fff; /* White text */
-    padding: 10px 15px;
+    background-color: #0dffd4;
+    color: #010e1d;
+    padding: 10px 18px;
     border-radius: 5px;
     text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s ease-in-out;
 }
 
 .project-card .btn:hover {
-    background-color: #ffd700; /* Gold on hover */
+    background-color: #4fd9d9;
+    transform: scale(1.1);
 }
 
-/* Contact Section Styling */
+/* Contact Section */
 #contact {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #010e1d;
+    color: #fff;
     padding: 4rem 1rem;
     text-align: center;
 }
 
 #contact h2 {
-    color: #ffd700; /* Gold color for contact heading */
+    color: #00d8d6;
+    font-size: 3em;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 15px rgba(0, 216, 214, 0.7);
 }
 
 .contact-info {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .contact-info .btn {
-    background-color: #ffd700; /* Gold button */
-    color: #000; /* Black text */
-    margin: 0.5rem;
-    padding: 10px 20px;
+    background-color: #0dffd4;
+    color: #010e1d;
+    margin: 1rem;
+    padding: 15px 30px;
     border-radius: 5px;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s ease-in-out;
 }
 
 .contact-info .btn:hover {
-    background-color: #ff9a9e; /* Pink on hover */
-    color: #fff; /* White text on hover */
+    background-color: #4fd9d9;
+    transform: scale(1.1);
+}
+
+/* Animated Waves */
+#hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url('https://www.transparenttextures.com/patterns/ocean.png') repeat-x;
+    animation: waveMovement 5s linear infinite;
+}
+
+@keyframes waveMovement {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
