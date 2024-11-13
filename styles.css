@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset and Body Styling */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ nav a {
     text-decoration: none;
 }
 
-section {
+main {
     width: 80%;
     max-width: 600px;
     margin: 20px 0;
