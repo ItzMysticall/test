@@ -1,11 +1,11 @@
 /* Projects Section Styling */
 #projects {
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
 }
 
 #projects h2 {
-    color: #ff9a9e;
+    color: #ffd700; /* Gold color for headings */
 }
 
 .project-grid {
@@ -17,14 +17,14 @@
 }
 
 .project-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #222; /* Dark gray card background */
+    border: 1px solid #444; /* Border to separate from background */
     padding: 20px;
     border-radius: 8px;
     width: 280px;
     text-align: center;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle shadow */
 }
 
 .project-card:hover {
@@ -33,38 +33,38 @@
 
 .project-card h3 {
     font-size: 1.4rem;
-    color: #ff9a9e;
+    color: #ff9a9e; /* Pink for project title */
     margin-bottom: 0.5rem;
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #555;
+    color: #ddd; /* Light gray for paragraph text */
     margin-bottom: 1rem;
 }
 
 .project-card .btn {
-    background-color: #ff9a9e;
-    color: #fff;
+    background-color: #ff9a9e; /* Pink button */
+    color: #fff; /* White text */
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .project-card .btn:hover {
-    background-color: #ffd700;
+    background-color: #ffd700; /* Gold on hover */
 }
 
 /* Contact Section Styling */
 #contact {
-    background-color: #333;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     padding: 4rem 1rem;
     text-align: center;
 }
 
 #contact h2 {
-    color: #ffd700;
+    color: #ffd700; /* Gold color for contact heading */
 }
 
 .contact-info {
@@ -72,8 +72,8 @@
 }
 
 .contact-info .btn {
-    background-color: #ffd700;
-    color: #333;
+    background-color: #ffd700; /* Gold button */
+    color: #000; /* Black text */
     margin: 0.5rem;
     padding: 10px 20px;
     border-radius: 5px;
@@ -82,6 +82,6 @@
 }
 
 .contact-info .btn:hover {
-    background-color: #ff9a9e;
-    color: #fff;
+    background-color: #ff9a9e; /* Pink on hover */
+    color: #fff; /* White text on hover */
 }
